@@ -57,4 +57,41 @@ The agent runs silently in the background, detects unauthorized usage based on s
 ---
 
 ## File Structure
+agent/
+├── monitor.py
+├── secret.key
+├── logs/
+│ └── events.enc
+└── captures/
+└── intruder_*.jpg
+
+## How Unauthorized Access is Detected
+
+The system operates in an armed mode.  
+Keyboard and mouse activity are continuously monitored.  
+Any user input detected while the system is armed is classified as unauthorized access and triggers the security response.
+
+---
+
+## How to Run
+
+Install dependencies:
+
+Start the agent:
+
+---
+
+## Limitations and Future Work
+
+- Cloud synchronization and dashboard integration  
+- Remote command execution  
+- Cross-platform (Linux/macOS) support  
+- Full facial recognition  
+
+---
+
+## Contribution Scope
+
+This module represents the OS-level contribution to the Fortify project, focusing on system monitoring, hardware interaction, encrypted local storage, and immediate defensive response.
+
 
